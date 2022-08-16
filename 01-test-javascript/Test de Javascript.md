@@ -41,11 +41,11 @@ console.log(`Dinero real: ${realMoney}`);
 
 ### ++Funciones++
 **1️⃣ Preguntas:**
-- El una porción de código *reutilizable* .
+- El una porción de código *reutilizable*.
 - Cuando el código es muy extenso y se necesite organizar y segmentar, para entenderlo mejor. Y cuando se repita partes del código iguales, evitando la *duplicidad*.
-- Sí, puedes llamar funciones dentro de alguna condicional o utilizar condicionales dentro de una función.
+- Los parámetros son definidos cuando creas una función y los argumentos se ingresan cuando se usa la función
 
-**2️⃣ Comvertir el código en función:**
+**2️⃣ Convertir el código en función:**
 ```javascript
 function message(name, lastName, nickname) {
 	let fullName = `${name} ${lastName}`;
@@ -197,7 +197,7 @@ printAllElements(arrayTest);
 
 .
 
-**4️⃣ Función que reciba un objeto e imrpima uno por uno sus elementos**
+**4️⃣ Función que reciba un objeto e imprima uno por uno sus elementos**
 ```javascript
 function printAllElements(object) {
 	for (const key in object) {

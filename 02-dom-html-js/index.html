@@ -10,12 +10,12 @@
 <body>
   <h1 class="green">Manipulación del DOM</h1>
 
-  <p>Esto es un párrafo</p>
-  <p class="paragraph">Esto es un párrafo con clase</p>
-  <p id="pId">Esto es un párrafo con ID</p>
+  <input id="number1" type="number" placeholder="Número 1">
+  <input id="number2" onchange="console.log('cambio el input 2')" type="number" placeholder="Número 2">
+  <button id="btnCalcular" onclick="calculate()">Calcular</button>
 
-  <input type="text" placeholder="Escribe" value="Test">
+  <p id="result"></p>
 
-  <script src="./script.js"></script>
+  <script src="./scriptEvents.js"></script>
 </body>
 </html>

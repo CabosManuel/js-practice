@@ -1,0 +1,121 @@
+:root {
+  --pipe-height: 260px;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+code {
+  color: green;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: lightgrey;
+  padding: 2px 3px;
+  border-radius: 3px;
+}
+
+#reset {
+  margin-bottom: 10px;
+}
+
+#background {
+  width: 250px;
+  height: 300px;
+  
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+
+  background-image: url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fellisonleao.github.io%2Fclumsy-bird%2Fdata%2Fimg%2Fbg.png&f=1&nofb=1');
+  background-size: 536px;
+  overflow: hidden;
+
+  cursor: url('https://raw.githubusercontent.com/samuelcust/flappy-bird-assets/master/sprites/yellowbird-upflap.png'), default;
+}
+
+#dieCount {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+
+  color: red;
+  font-size: 12px;
+  font-weight: 700;
+  text-shadow: 0px 0px 3px white;
+}
+
+#message {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgba(255, 0, 0, 0.4);
+
+  color: white;
+  font-size: 36px;
+  font-weight: 700;
+
+  text-shadow: 0px 0px 10px red;
+}
+
+.start, .finish {
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 700;
+  text-align: center;
+}
+
+#obstacles {
+  margin: 0 30px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.pipes {
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  position: relative;
+}
+
+.pipeHitBox {
+  width: 74px;
+  height: var(--pipe-height);
+
+  display: flex;
+  justify-content: flex-end;
+
+  position: relative;
+}
+
+.pipe {
+  height: var(--pipe-height);
+
+  position: relative;
+  top: 23px;
+}
+
+.pipe.down {
+  top: -2px;
+  transform: rotate(180deg);
+}
+
+.pipeHitBox.down { top: 10px; }
+.pipeHitBox { bottom: -20px; }
+
+#comment {
+  color: gray;
+  font-size: 10px;
+  font-style: italic;
+}

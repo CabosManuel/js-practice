@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>addEventListener</title>
+
+  <link rel="stylesheet" href="./style.css">
+
+  <!-- Montserrat Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <h1><u>Eventos</u></h1>
+
+  <p><code>keypress</code> Escribe para cambiar el emoji.</p>
+  <input id="emojiInput" type="text" maxlength="250">
+  <span id="emojiResult" style="font-size: 32px;"></span>
+
+  <p><code>mouseover</code> No choques con las tuberías.</p>
+  <button id="reset" disabled>Reiniciar</button>
+  <div id="background">
+    <span id="dieCount">MUERTES: 0</span>
+
+    <div id="obstacles">
+      <div class="pipes">
+        
+        <div class="pipeHitBox down">
+          <img class="pipe down" alt="pipe" src="https://github.com/samuelcust/flappy-bird-assets/blob/master/sprites/pipe-green.png?raw=true">
+        </div>
+        <div class="pipeHitBox">
+          <img class="pipe" alt="pipe" src="https://github.com/samuelcust/flappy-bird-assets/blob/master/sprites/pipe-green.png?raw=true">
+        </div>
+
+      </div>
+    </div>
+
+    <div id="message" hidden><span>PERDISTE</span></div>
+  </div>
+  <span id="comment">La hit box no es perfecta, pero funciona :D</span>
+
+  <script src="./script.js"></script>
+</body>
+</html>
